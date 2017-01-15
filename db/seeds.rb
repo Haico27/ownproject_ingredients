@@ -15,7 +15,7 @@ ingredient4 = Ingredient.create( {name: "Volkoren pasta", amount: "100 gram"} )
 ingredient5 = Ingredient.create( {name: "Champignons", amount: "Negen stuks"} )
 
 meal1 = Meal.create( {name: "Pasta basic", amount: "Een bord vol", time: "Diner"} )
-meal2 = Meal.create( {name: "Risotto Funghi" amount: "Een pan vol", time: "Lunch"} )
+meal2 = Meal.create( {name: "Risotto Funghi", amount: "Een pan vol", time: "Lunch"} )
 meal3 = Meal.create( {name: "Omelet kaas", amount: "Een", time: "Ontbijt"} )
 
 meal1.ingredients << [ingredient1]
