@@ -5,3 +5,30 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Meal.delete_all
+Ingredient.delete_all
+
+ingredient1 = Ingredient.create( {name: "Tomaat", amount: "Een"} )
+ingredient2 = Ingredient.create( {name: "Kaas", amount: "100 gram"} )
+ingredient3 = Ingredient.create( {name: "Komkommer", amount: "Een"} )
+ingredient4 = Ingredient.create( {name: "Volkoren pasta", amount: "100 gram"} )
+ingredient5 = Ingredient.create( {name: "Champignons", amount: "Negen stuks"} )
+
+meal1 = Meal.create( {name: "Pasta basic", amount: "Een bord vol"} )
+meal2 = Meal.create( {name: "Risotto Funghi" amount: "Een pan vol"} )
+meal3 = Meal.create( {name: "Omelet kaas", amount: "Een"} )
+
+meal1.ingredients << [ingredient1]
+meal1.save
+
+meal1.ingredients << [ingredient2]
+meal1.save
+
+meal1.ingredients << [ingredient4]
+meal1.save
+
+meal2.ingredients << [ingredient2]
+meal2.save
+
+meal3.ingredients << [ingredient3]
+meal3.save
